@@ -81,11 +81,22 @@ function saySomething() {
 
 // Better to use function declaration
 
-
 // Parameters and arguments for functions
 
 function someSayHiFunction(name) {
   console.log(`Hello, ${name}! How are u?`);
 }
-someSayHiFunction('Yurij')
+someSayHiFunction('Yurij');
 
+const button = document.querySelector('button');
+
+function log() {
+  console.log(this);
+
+  setTimeout(function () {
+    console.log(this), 100;
+  });
+}
+log();
+
+button.addEventListener('click', log);

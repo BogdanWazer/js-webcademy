@@ -2,3 +2,9 @@ body {
   background-color: black;
   color: #fff;
 }
+
+.counter {
+  display: flex;
+  gap: 20px;
+  padding-top: 50px;
+}

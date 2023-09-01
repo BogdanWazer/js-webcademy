@@ -45,3 +45,12 @@ User.prototype.changeEmail = function (newEmail) {
 const mango = new User({ email: 'mango@gmail.com', password: 'kbv052114' });
 mango.changeEmail('mango2@gmail.com');
 console.log(mango);
+
+const objA = {
+  x: 5,
+};
+
+User.logInfo = function (obj) {
+  console.log('User.logInfo -> obj', obj);
+};
+

@@ -32,6 +32,29 @@ let user = {
   },
 };
 
-user.password = 'hello';
+let user_profile = {
+  username: '',
+  photo: '',
+  age: 0,
+  __proto__: user,
+};
 
-console.log(user.validatePassword())
+user_profile.age = 25;
+user_profile.username = 'Pupkin';
+console.log(user_profile);
+
+user.password = 'hello';
+console.log(user.validatePassword());
+
+class User {
+  // username
+  // password
+  constructor(username, password) {
+    this.username = username;
+    this.password = password;
+  }
+}
+let ab = 'Ivan';
+let bc = '777';
+
+const person = new User(a, b);

@@ -53,8 +53,17 @@ class User {
     this.username = username;
     this.password = password;
   }
+
+  validatePassword() {
+    if (this.password.length > 6) {
+      return true;
+    }
+    return false;
+  }
 }
 let ab = 'Ivan';
 let bc = '777';
 
-const person = new User(a, b);
+const person = new User(ab, bc);
+console.log(person.validatePassword());
+
